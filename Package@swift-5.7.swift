@@ -18,11 +18,11 @@ let package = Package(
             targets: ["NamiPairingFramework", "DeviceConnections"])
     ],
     targets: [
-        .binaryTarget(name: "NamiPairingFramework", url: "https://github.com/namiai/NamiPairing_iOS_thin/releases/download/2.2.1/NamiPairingFramework.xcframework.zip",
-            checksum: "1a3f7489d6a7158666e21e0f128c3e4726cfbd1edc90f41621fef5b24d6f3d37"),
-        .binaryTarget(name: "StandardPairingUI", url: "https://github.com/namiai/NamiPairing_iOS_thin/releases/download/2.2.1/StandardPairingUI.xcframework.zip",
-            checksum: "96f140fe5a52c071338477140cd2e6218cf2b6fd1ef8e31035a4ac612a8ae51c"),
-        .binaryTarget(name: "DeviceConnections", url: "https://github.com/namiai/NamiPairing_iOS_thin/releases/download/2.2.1/DeviceConnections.xcframework.zip",
-            checksum: "0f7de428d85d690e3313f570c558405765be842043978a31613747a1e38663c0")
+        .binaryTarget(name: "NamiPairingFramework", url: "https://github.com/namiai/NamiPairing_iOS_thin/releases/download/2.2.2/NamiPairingFramework.xcframework.zip",
+            checksum: "869f695b433c9858857522f9cd90fb8a9a9f0e5795d60ec752e1fb84f149c879"),
+        .binaryTarget(name: "StandardPairingUI", url: "https://github.com/namiai/NamiPairing_iOS_thin/releases/download/2.2.2/StandardPairingUI.xcframework.zip",
+            checksum: "474acbe6c1d6b3d612ec0d1b65df717ffe2cbcea2e697a5d8a980534187c3978"),
+        .binaryTarget(name: "DeviceConnections", url: "https://github.com/namiai/NamiPairing_iOS_thin/releases/download/2.2.2/DeviceConnections.xcframework.zip",
+            checksum: "61db2697642f61ee434d5a68fa966f12a9826210d4d6808cd3a60fe887ad0282")
     ]
 )
