@@ -12,17 +12,31 @@ let package = Package(
     products: [
         .library(
             name: "NamiPairing",
-            targets: ["NamiPairingFramework", "StandardPairingUI", "DeviceConnections"]),
+            targets: ["NamiPairingCore", "StandardPairingUI"]),
         .library(
             name: "NamiPairing-NoUI", 
-            targets: ["NamiPairingFramework", "DeviceConnections"])
+            targets: ["NamiPairingCore"])
+    ],
+    dependencies: [
+        .package(url: "https://github.com/divkit/divkit-ios", from: "32.9.0"),
+        .package(url: "https://github.com/namiai/vgsl.git", revision: "3a1ce6687505ef40965930d198c0f700234bf70b")
+        
     ],
     targets: [
-        .binaryTarget(name: "NamiPairingFramework", url: "https://github.com/namiai/NamiPairing_iOS_thin/releases/download/2.2.2/NamiPairingFramework.xcframework.zip",
-            checksum: "869f695b433c9858857522f9cd90fb8a9a9f0e5795d60ec752e1fb84f149c879"),
-        .binaryTarget(name: "StandardPairingUI", url: "https://github.com/namiai/NamiPairing_iOS_thin/releases/download/2.2.2/StandardPairingUI.xcframework.zip",
-            checksum: "474acbe6c1d6b3d612ec0d1b65df717ffe2cbcea2e697a5d8a980534187c3978"),
-        .binaryTarget(name: "DeviceConnections", url: "https://github.com/namiai/NamiPairing_iOS_thin/releases/download/2.2.2/DeviceConnections.xcframework.zip",
-            checksum: "61db2697642f61ee434d5a68fa966f12a9826210d4d6808cd3a60fe887ad0282")
+        .binaryTarget(name: "NamiPairingFramework", url: "https://github.com/namiai/NamiPairing_iOS_thin/releases/download/4.0.0/NamiPairingFramework.xcframework.zip",
+            checksum: "d1683ca48611d6532a84dccc3ff5dad8b322ef5c5202bcd603fea9b53ca86a24"),
+        .binaryTarget(name: "StandardPairingUI", url: "https://github.com/namiai/NamiPairing_iOS_thin/releases/download/4.0.0/StandardPairingUI.xcframework.zip",
+            checksum: "71b93d875a5a1d895975cf592fb756b63c825ab667370a8dddaa7f606e87885e"),
+        .target(
+          name: "NamiPairingCore",
+          dependencies: [
+            "NamiPairingFramework",
+            .product(name: "DivKit", package: "divkit-ios"),
+            .product(name: "DivKitSVG", package: "divkit-ios"),
+            .product(name: "DivKitExtensions", package: "divkit-ios"),
+            .product(name: "VGSL", package: "vgsl"),
+          ],
+          path: "Sources/NamiPairing/NamiPairingCore"
+        ),
     ]
 )
