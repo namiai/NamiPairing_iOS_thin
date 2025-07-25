@@ -19,14 +19,14 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/divkit/divkit-ios", from: "32.9.0"),
-        .package(url: "https://github.com/namiai/vgsl.git", revision: "3a1ce6687505ef40965930d198c0f700234bf70b")
+        .package(url: "https://github.com/namiai/vgsl.git", from: "7.4.2")
         
     ],
     targets: [
-        .binaryTarget(name: "NamiPairingFramework", url: "https://github.com/namiai/NamiPairing_iOS_thin/releases/download/4.0.0/NamiPairingFramework.xcframework.zip",
-            checksum: "d1683ca48611d6532a84dccc3ff5dad8b322ef5c5202bcd603fea9b53ca86a24"),
-        .binaryTarget(name: "StandardPairingUI", url: "https://github.com/namiai/NamiPairing_iOS_thin/releases/download/4.0.0/StandardPairingUI.xcframework.zip",
-            checksum: "71b93d875a5a1d895975cf592fb756b63c825ab667370a8dddaa7f606e87885e"),
+        .binaryTarget(name: "NamiPairingFramework", url: "https://github.com/namiai/NamiPairing_iOS_thin/releases/download/4.0.1/NamiPairingFramework.xcframework.zip",
+            checksum: "ba975b7b3ce7bc2bdbb066b124a76518ba7172bf45a640f2d2afd4ab0ee3d09c"),
+        .binaryTarget(name: "StandardPairingUI", url: "https://github.com/namiai/NamiPairing_iOS_thin/releases/download/4.0.1/StandardPairingUI.xcframework.zip",
+            checksum: "b68d7226225b21c8f41f5ba054030da90db1b74f4d949b6682405637e49b8308"),
         .target(
           name: "NamiPairingCore",
           dependencies: [
