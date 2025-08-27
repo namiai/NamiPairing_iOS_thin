@@ -22,10 +22,10 @@ let package = Package(
         .package(url: "https://github.com/namiai/vgsl.git", from: "7.4.2")
     ],
     targets: [
-        .binaryTarget(name: "NamiPairingFramework", url: "https://github.com/namiai/NamiPairing_iOS_thin/releases/download/4.0.4/NamiPairingFramework.xcframework.zip",
-            checksum: "75a4c6faea1db8e28dcc3866f94a6281634801874fcb3703bb81eb161c31542a"),
-        .binaryTarget(name: "StandardPairingUI", url: "https://github.com/namiai/NamiPairing_iOS_thin/releases/download/4.0.4/StandardPairingUI.xcframework.zip",
-            checksum: "b57f031671c07b63dd41068108c8171a36a0fbde8cb0b433d42e21f4190fa28e"),
+        .binaryTarget(name: "NamiPairingFramework", url: "https://github.com/namiai/NamiPairing_iOS_thin/releases/download/4.0.5/NamiPairingFramework.xcframework.zip",
+            checksum: "b78c350454689f7a96521937e683fc1f73ee46ab74450e9ecb5c164439fd042a"),
+        .binaryTarget(name: "StandardPairingUI", url: "https://github.com/namiai/NamiPairing_iOS_thin/releases/download/4.0.5/StandardPairingUI.xcframework.zip",
+            checksum: "bf0cf3657bc0e95746ec284686a5b559529b2d32e31939c993d05d7f2b7204d4"),
         .target(
           name: "NamiPairingCore",
           dependencies: [
