@@ -23,11 +23,11 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "NamiPairingFramework",
-            url: "https://github.com/namiai/NamiPairing_iOS_thin/releases/download/4.9.0/NamiPairingFramework.xcframework.zip",
-            checksum: "7886cae4dcf04e667daa86ff924a1378d81801b5333a4e20e2f4480d1318826f"),
+            url: "https://github.com/namiai/NamiPairing_iOS_thin/releases/download/4.8.0/NamiPairingFramework.xcframework.zip",
+            checksum: "36ef33f956ceaebbd7fe1c97836971dbb7ef4d8901f2a6bbfac16ba1c23bf9d9"),
         .binaryTarget(
-            name: "StandardPairingUI", url: "https://github.com/namiai/NamiPairing_iOS_thin/releases/download/4.9.0/StandardPairingUI.xcframework.zip",
-            checksum: "e9d6e5081f878ebda63b2af8cbf1c4be2cc06161708ec65208953ceb6f268970"),
+            name: "StandardPairingUI", url: "https://github.com/namiai/NamiPairing_iOS_thin/releases/download/4.8.0/StandardPairingUI.xcframework.zip",
+            checksum: "04d61484f7cdd93ee90ef2499ad80edda004097bd9490cc7454955d0e0090cd3"),
         .target(
             name: "NamiPairingCore",
             dependencies: [
